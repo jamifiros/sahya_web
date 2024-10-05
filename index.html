@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahya Ayurvedics</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Navigation -->
+ <!-- Navigation -->
+<nav id="navbar" class="bg-transparent p-4 fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-white text-opacity-80 text-lg font-bold" id="name">Sahya Ayurvedics</div>
+      <div class="hidden md:flex space-x-4">
+        <a href="#home" class="nav-link text-slate-100 hover:text-yellow-500">Home</a>
+        <a href="#about" class="nav-link text-slate-100 hover:text-yellow-500">About Us</a>
+        <a href="#treatments" class="nav-link text-slate-100 hover:text-yellow-500">Treatments</a>
+        <a href="#packages" class="nav-link text-slate-100 hover:text-yellow-500">Packages</a>
+        <a href="#features" class="nav-link text-slate-100 hover:text-yellow-500">Features</a>
+        <a href="#contact" class="nav-link text-slate-100 hover:text-yellow-500">Contact Us</a>
+      </div>
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-white hover:text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden">
+      <a href="#home" class="nav-link block text-slate-100 hover:text-white py-2">Home</a>
+      <a href="#about" class="nav-link block text-slate-100 hover:text-white py-2">About</a>
+      <a href="#treatments" class="nav-link block text-slate-100 hover:text-white py-2">Treatments</a>
+      <a href="#features" class="nav-link block text-slate-100 hover:text-white py-2">Features</a>
+      <a href="#contact" class="nav-link block text-slate-100 hover:text-white py-2">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero section -->
+  <div class="hero bg-black h-screen relative" id="home">
+    <div class="hero-img active">
+      <img src="https://static.vecteezy.com/system/resources/previews/035/978/179/non_2x/ai-generated-indian-ayurveda-herbal-medicine-free-photo.jpg" alt="Background Image 1" class="w-full h-full object-cover">
+    </div>
+    <div class="hero-img">
+      <img src="https://www.nimba.in/wp-content/uploads/2019/12/panchakarma-treatments.jpg" alt="Background Image 2" class="w-full h-full object-cover">
+    </div>
+    <div class="hero-img">
+      <img src="https://sppc.in/wp-content/uploads/2023/10/Untitled-design-2-1.jpg" alt="Background Image 3" class="w-full h-full object-cover">
+    </div>
+    <div class="absolute inset-0 z-50 flex items-center justify-center text-center text-white">
+      <div class="hero-cnt p-5">
+        <h1 class="text-3xl leading-tight sm:text-7xl">Nourish Your Soul with Ayurveda</h1>
+        <p class="text-lg mt-4 text-1xl font-thin leading-tight sm:text-2xl">"Experience holistic healing and tranquility at Sahya Ayurvedics resort."</p>
+        <button class="mt-8 px-8 py-4 custom-bg text-white rounded-lg border-4 border-yellow-500 font-bold text-base hover:bg-yellow-500 transition duration-300">Explore Sahya</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- about sections -->
+  <div class="flex flex-wrap-reverse justify-center  lg:p-10 overflow-hidden items-center h-screen" id="about">
+    <div class="about-img hidden lg:block w-[35vw] h-[55vh] mx-8">
+    </div>
+    <div class="w-[100vw] lg:w-[40vw] px-5">
+      <h2 class="text-5xl text-center p-3">Who we are</h2>
+      <p class="text-justify leading-10">
+        Sahya Ayurvedics is a unique place to experience the perfect blend of Ayurveda, yoga, pranayama, meditation, and marma. Guided by veterans with over 30 years of experience, we offer authentic treatments focused on holistic health, balance, and well-being through diet, lifestyle, herbs, and panchakarma therapies.
+      </p>
+      
+    </div>
+  </div>
+
+  <!-- about ayurveda -->
+   <div class="ayurveda flex flex-row-reverse flex-wrap justify-center p-10 lg:p-10 overflow-hidden items-center">
+    <div class="about-ayurveda-img  lg:block w-[35vw] h-[55vh] mx-8 my-0">
+      <img src="assets/ayurveda1.png" alt="ayurveda" class="h-100">
+    </div>
+    <div class="w-[100vw] text-white lg:w-[40vw] ">
+      <h2 class="text-5xl ">Ayurveda</h2>
+      <hr style="height: 5px; background-color: rgb(181, 148, 0); width: 70px; border: none;">
+      <p class="text-justify mt-5 ">
+        Ayurveda, dating back 5000-10000 years is the oldest and most holistic medical system available on the planet today. The word Ayurveda comes from the Sanskrit, “Ayur” and “veda” which means the Science of life. Ayurveda is the ancient wisdom of life revealed to the congregation of enlightened sages at the foot hills of Himalayas. It is the extraordinary mind -body medicine of India, a tremendous resource for bringing holiness at all levels of our existence.
+        </p>
+        <p class="text-justify mt-5 ">
+        Ayurveda focus on individual’s holistic health rather than mere physical body. It works on the principle that perfect health condition is obtained through the psychosomatic integration in a person. Ayurveda places great emphasis on prevention and encourages maintaining health by paying close attention to balance in one’s life through right thinking, diet, lifestyle and use of herbs. It provides us with unique herbal health remedies and purificatory procedures that is panchakarma which corrects imbalance of humors or doshas namely, vata pitta and kapha for physical,mental and spiritual well being.
+      </p>
+    </div>
+   </div>
+
+  <!-- Treatments section -->
+  <div class="treatments-div py-5 px-10 text-center" id="treatment">
+    <div class="text-center">
+      <h4 class="text-center mt-10 mb-5">OUR TREATMENTS</h4>
+      <h2 class="text-center  text-3xl font-bold mb-5">Treatments</h2>
+      <p>Improper food, activities, sleep and lifestyle can lead to mild vitiation of dosas in the body. At this point, mild treatments and herbal preparations along with lifestyle modification helps in correcting the imbalances of the body. Ayurveda considers diet, lifestyle and sleep as the pillars of preventive healthcare. Ayurveda strives to treat cause of the disease by interfere with the pathology and improves the vitality.</p>
+    </div>
+   <div class="flex flex-nowrap justify-center gap-4 my-5">
+        <div class="card relative flex items-end overflow-hidden p-4 w-full text-center text-white bg-white shadow-md md:h-96">
+          <div class="content relative flex flex-col items-center w-full p-4 z-10">
+            <h2 class="title text-lg font-bold leading-tight mb-5">Abhyamagam</h2>
+            <p class="copy font-serif text-xl italic leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <button class="btn mt-6 py-2 px-4 text-xs font-bold tracking-wider uppercase text-white bg-black hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-500">Book Now</button>
+          </div>
+        </div>
+        <div class="card relative flex items-end overflow-hidden p-4 w-full text-center text-white bg-white shadow-md md:h-96">
+          <div class="content relative flex flex-col items-center w-full p-4 z-10">
+            <h2 class="title text-lg font-bold leading-tight mb-5">Shirodhara</h2>
+            <p class="copy font-serif text-xl italic leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, eveniet?</p>
+            <button class="btn mt-6 py-2 px-4 text-xs font-bold tracking-wider uppercase text-white bg-black hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-500">Book Now</button>
+          </div>
+        </div>
+        <div class="card relative flex items-end overflow-hidden p-4 w-full text-center text-white bg-white shadow-md md:h-96">
+          <div class="content relative flex flex-col items-center w-full p-4 z-10">
+            <h2 class="title text-lg font-bold leading-tight mb-5">Udvartanam</h2>
+            <p class="copy font-serif text-xl italic leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="btn mt-6 py-2 px-4 text-xs font-bold tracking-wider uppercase text-white bg-black hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-500">Book Now</button>
+          </div>
+        </div>
+        <div class="card relative flex items-end overflow-hidden p-4 w-full text-center text-white bg-white shadow-md md:h-96">
+          <div class="content relative flex flex-col items-center w-full p-4 z-10">
+            <h2 class="title text-lg font-bold leading-tight mb-5">Kati-basti</h2>
+            <p class="copy font-serif text-xl italic leading-relaxed">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, distinctio!</p>
+            <button class="btn mt-6 py-2 px-4 text-xs font-bold tracking-wider uppercase text-white bg-black hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-500">Book Now</button>
+          </div>
+        </div>
+        
+      </div>
+      <button class="mt-8 mb-10 px-8 py-2 bg-yellow-500 text-white rounded-lg border-4 border-yellow-500 font-bold text-base hover:bg-yellow-100 hover:text-gray-700 transition duration-300">see all Treatments</button>
+  </div>
+
+  <div class="features p-10" style="height: 140vh;" id="features">
+    <h4 class="text-xl text-gray-100 text-center">Features</h4>
+    <h1 class="text-5xl text-white text-center mb-10">What Sets Our Ayurveda Apart</h1>
+    <div class="feature-img flex justify-center align-center content-center" >
+      <img src="assets/logoPNG.png" alt="" width="650px" height="650px" style="padding: 50px;">
+    </div>
+    <div class="cnt-div">
+      <div class="div1">
+        <i class="fa-solid fa-atom"></i>
+        <p>Re-Engergize</p>
+      </div>
+      <div class="div2">
+        <i class="fa-solid fa-atom"></i>
+        <p>Re-Strength</p>
+      </div>
+      <div class="div3">
+        <i class="fa-solid fa-atom"></i>
+        <p>Mind & Soul</p>
+      </div>
+      <div class="div4">
+        <i class="fa-solid fa-atom"></i>
+        <p>Beauty of body</p>
+      </div>
+      <div class="div5">
+        <i class="fa-solid fa-atom"></i>
+        <p>Beauty of body</p>
+      </div>
+      <div class="div6">
+        <i class="fa-solid fa-atom"></i>
+        <p>Beauty of body</p>
+      </div>
+      
+    </div>
+  </div>
+
+
+  <!-- why-us -->
+
+  <div class="explore grid grid-cols-2 justify-center py-5 items-center h-min" id="packages" >
+      
+   <div class="div-head w-100 px-10">
+      <h1 class="text-5xl text-white mb-5">Our Packages</h1>
+      <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eligendi velit minus molestiae suscipit eos soluta beatae distinctio, unde cumque dolorum in optio libero pariatur iure iusto, quasi sequi recusandae! Fuga alias consectetur, odit porro ducimus placeat sunt architecto possimus.</p>
+      <button class="mt-8 px-8 py-2 custom-bg text-white rounded-lg border-4 border-yellow-500 font-bold text-base hover:bg-yellow-500 transition duration-300">See more</button>
+    </div>
+
+   <div class="place-cards flex justify-center flex-wrap">
+
+    <div class="relative group cursor-pointer overflow-hidden duration-500 w-64 h-80 text-gray-50 p-5 m-2"  >
+      <div class="">
+        <div class="group-hover:scale-110 w-full h-60 duration-500" style="background: url(https://www.kumarakomlakeresort.in/assets/images/ayurveda/gallery/kumarakom-lake-resort-ayurveda-20.jpg) no-repeat;background-size: cover;"></div>
+        <div class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12">
+          <div class="absolute -z-10 left-0 w-64 h-28 opacity-0 duration-500 group-hover:opacity-80 group-hover:bg-slate-900"></div>
+          <span class="text-xl font-bold">Package 1</span>
+          <p class="group-hover:opacity-100 w-56 duration-500 opacity-0">
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+       </div>
+      </div>
+   </div>
+
+   <div class="relative group cursor-pointer overflow-hidden duration-500 w-64 h-80 text-gray-50 p-5 m-2"  >
+    <div class="">
+      <div class="group-hover:scale-110 w-full h-60 duration-500" style="background: url(https://www.panchakarmakerala.com/images/treatment-packages-banner.jpg) no-repeat;background-size: cover;"></div>
+      <div class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12">
+        <div class="absolute -z-10 left-0 w-64 h-28 opacity-0 duration-500 group-hover:opacity-80 group-hover:bg-slate-900"></div>
+        <span class="text-xl font-bold">package 2</span>
+        <p class="group-hover:opacity-100 w-56 duration-500 opacity-0">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+     </div>
+    </div>
+ </div>
+
+ <div class="relative group cursor-pointer overflow-hidden duration-500 w-64 h-80 text-gray-50 p-5 m-2"  >
+  <div class="">
+    <div class="group-hover:scale-110 w-full h-60 duration-500" style="background: url(https://sreechithraayurhome.com/uploads/media_library/body_immunification.jpg) no-repeat;background-size: cover;"></div>
+    <div class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12">
+      <div class="absolute -z-10 left-0 w-64 h-28 opacity-0 duration-500 group-hover:opacity-80 group-hover:bg-slate-900"></div>
+      <span class="text-xl font-bold">package 3</span>
+      <p class="group-hover:opacity-100 w-56 duration-500 opacity-0">
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+   </div>
+  </div>
+</div>
+
+<div class="relative group cursor-pointer overflow-hidden duration-500 w-64 h-80 text-gray-50 p-5 m-2"  >
+  <div class="">
+    <div class="group-hover:scale-110 w-full h-60 duration-500" style="background: url(https://5.imimg.com/data5/VG/TT/VD/GLADMIN-7767282/ayurvedic-massage-500x500.jpg) no-repeat;background-size: cover;"></div>
+    <div class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12">
+      <div class="absolute -z-10 left-0 w-64 h-28 opacity-0 duration-500 group-hover:opacity-80 group-hover:bg-slate-900"></div>
+      <span class="text-xl font-bold">Package 4</span>
+      <p class="group-hover:opacity-100 w-56 duration-500 opacity-0">
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+   </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="book h-80 py-5 px-10 flex items-center justify-center text-center">
+  <div>
+    <h1 class="text-6xl text-center mb-5 text-white text-center">Sahya ayurvedics <br>The Best Ayurveda Clinic In Wayanad</h1>
+  <p class="text-center text-1xl">Sahya Ayurvedics, the leading Kerala Ayurveda Clinic in Wayanad, offers unparalleled healthcare services. With a team of experienced doctors and therapists, state-of-the-art facilities, and a focus on holistic wellness, it stands as the epitome of excellence in Ayurvedic treatment in Ambalavayal, wayanad.</p>
+  <button class="mt-8 px-8 py-2 custom-bg text-white rounded-lg border-4 border-white font-bold text-base hover:bg-white hover:text-black transition duration-300">Book Now</button>
+  </div>
+</div>
+
+<footer class="bg-gray-900 p-10 text-white" id="Contact">
+  <div class="footer flex flex-wrap justify-evenly items-center content-center gap-4">
+    <div class="about-sahya">
+      <img src="assets/logo.png" alt="">
+      <h1 class="text-2xl text-white  ">Sahya Ayurvedics</h1>
+      <p class="w-60 my-2 text-sm text-justify">Experience authentic Ayurvedic treatments, relaxing massages, and more at Nerium Ayurveda Clinic in Kakkanad, Kochi. Explore our range of Ayurveda packages designed to promote wellness and vitality.</p>
+    </div>
+    <div class="address">
+      <h1 class="text-2xl text-white mb-5 ">address</h1>
+      <p>
+        Vaduvanchal Road,<br>Manjappara,<br>Ambalavayal
+        wayanad ,<br>Kerala,India - 673593 <br>
+        Phone No: +91 1234567890, +91 987654321
+        <br>
+        sahyaayurvedicsresorts@gmail.com</p>
+    </div>
+    <div class="list">
+      <h1 class="text-2xl text-white border-b-2  mb-5">Treatments</h1>
+      <ul>
+        <li><a href="#">treatment name</a></li>
+        <li><a href="#">treatment name</a></li>
+        <li><a href="#">treatment name</a></li>
+        <li><a href="#">treatment name</a></li>
+        <li><a href="#">treatment name</a></li>
+      </ul>
+    </div>
+    <div class="list">
+      <h1 class="text-2xl text-white border-b-2  mb-5">Packages</h1>
+      <ul>
+        <li><a href="#"> Packages name</a></li>
+        <li><a href="#"> Packages name</a></li>
+        <li><a href="#"> Packages name</a></li>
+        <li><a href="#"> Packages name</a></li>
+        <li><a href="#"> Packages name</a></li>
+      </ul>
+    </div>
+  </div>
+  <hr class="m-5">
+  <div class="icon flex flex-wrap justify-center content-center items-center gap-5">
+    <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+  </div>
+  <div class="copyright text-center m-3">
+    <p>Copyright © 2024 Sahya Ayurvedics. Website Design by Technopano</p>
+  </div>
+</footer>
+   
+<script>
+   document.addEventListener('DOMContentLoaded', function () {
+    // Change navbar background and text color on scroll
+    window.addEventListener('scroll', function () {
+      const navbar = document.getElementById('navbar');
+      const links = document.querySelectorAll('.nav-link');
+      const name = document.getElementById('name');
+
+      if (window.scrollY > 50) {
+        // Change navbar background to white
+        navbar.classList.add('bg-white', 'shadow-lg');
+       name.classList.add('text-yellow-500');
+        // Change links color to black
+        links.forEach(link => {
+          link.classList.remove('text-slate-100');
+          link.classList.add('text-black');
+        });
+      } else {
+        // Revert to original transparent navbar
+        navbar.classList.remove('bg-white', 'shadow-lg');
+        name.classList.remove('text-yellow-500');
+        // Revert links color to white
+        links.forEach(link => {
+          link.classList.remove('text-black');
+          link.classList.add('text-slate-100');
+        });
+      }
+    });
+  });
+  </script>
+<script src="script.js"></script>
+</body>
+</html>

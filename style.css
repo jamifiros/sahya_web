@@ -1,0 +1,206 @@
+:root {
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+  z-index: 2;
+}
+.hero {
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    transform: scale(1.1);
+  }
+  .hero-img.active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 1;
+  }
+  .custom-bg{
+    background-color: rgba(0,0,0,0.4);
+  }
+  .hero-cnt{
+    padding: 20px;
+   h1{
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+   }
+   p{
+    text-shadow: 0px 0px 3px rgb(0, 0, 0);
+   }
+    button{
+        box-shadow: 2px 2px 5px #000;
+          &:hover{
+            text-shadow: none;
+          }
+    }
+  }
+  
+  .about-img {
+    background: url('https://img.freepik.com/premium-photo/ayurvedic-herbs-free-photo-hd-background_915071-111358.jpg') no-repeat fixed center;
+    background-size: cover;
+  }
+
+  .ayurveda{
+    background-image:linear-gradient(rgba(5, 59, 5, 0.88) , rgba(5, 60, 84, 0.875)),url(https://img.freepik.com/free-vector/vector-seamless-floral-pattern-illustration-horizontally-vertically-repeatable_8130-2711.jpg?t=st=1718380395~exp=1718383995~hmac=c6ca57b1145d4592d57707cabcea764d5753674098b4897ca62361e8110d823e&w=1060);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: left;
+    p{
+        text-indent: 60px;
+
+    }
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    transition: transform calc(var(--d) * 1.5) var(--e);
+    pointer-events: none;
+  }
+
+  .card::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0.9));
+    transform: translateY(-50%);
+    transition: transform calc(var(--d) * 2) var(--e);
+  }
+
+  .card:nth-child(1)::before { background-image: url('https://ayurvaid.com/wp-content/uploads/2022/10/Abhyanga-scaled.jpg'); }
+  .card:nth-child(2)::before { background-image: url('https://5.imimg.com/data5/SELLER/Default/2023/3/296263299/XZ/EX/ZA/47618544/shirodhara.jpg'); }
+  .card:nth-child(3)::before { background-image: url('https://5.imimg.com/data5/UD/GC/GJ/SELLER-83888495/udvartana-massage-500x500.jpg'); }
+  .card:nth-child(4)::before { background-image: url('https://5.imimg.com/data5/SA/IQ/BC/SELLER-8407465/katibasti-treatment-service.png'); }
+
+  @media (hover: hover) and (min-width: 600px) {
+    .card::after { transform: translateY(0); }
+    .content { transform: translateY(calc(100% - 4.5rem)); }
+
+    .content > *:not(.title) {
+      opacity: 0;
+      transform: translateY(1rem);
+      transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+    }
+
+    .card:hover,
+    .card:focus-within {
+      align-items: center;
+      &::before { transform: translateY(-4%); }
+      &::after { transform: translateY(-50%); }
+      .content { transform: translateY(0); }
+
+      .content > *:not(.title) {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: calc(var(--d) / 8);
+      }
+    }
+
+    .card:focus-within {
+      &::before, &::after, .content, .content > *:not(.title) {
+        transition-duration: 0s;
+      }
+    }
+  }
+
+.group{
+  background-color: rgba(18, 18, 18, 0.823);
+  color: #fff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.features{
+  position: relative;
+  background-image:linear-gradient(rgba(2, 99, 44, 0.289),rgba(0, 0, 0, 0.429)), url(https://images.all-free-download.com/images/graphiclarge/green_abstract_background_148756.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  .features .cnt-div > div i{
+    background-color: rgba(253, 255, 254,0.8);
+    border-radius: 50%;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 50px;
+    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.5);
+  }
+ 
+  .features .cnt-div > div{
+    position: absolute;
+  }
+  .features .cnt-div{
+    .div1{
+      left:450px;
+      top: 200px;
+    }
+    .div2{
+      left:300px;
+      top: 440px;
+    }
+    .div3{
+      left:400px;
+      top: 670px;
+    }
+    .div4{
+       right:450px;
+      top: 200px;
+    }
+    .div5{
+      right:300px;
+      top: 440px;
+    }
+    .div6{
+      right:400px;
+      top: 670px;
+    }
+  }
+  .features .cnt-div p{
+    color: #fff;
+    font-weight: 800;
+    text-shadow: 2px 3px 3px #000;
+  }
+  .explore{
+    background:linear-gradient(rgba(0, 0, 0, 0.579),rgba(0, 0, 0, 0.5)), url(https://neriumayurveda.com/wp-content/uploads/2023/06/Nerium-ayurveda-treatment-1.jpg) scroll no-repeat;
+    background-size: cover;
+    color: #fff;
+  }
+  .book{
+    background:linear-gradient(rgba(0, 0, 0, 0.579),rgba(0, 0, 0, 0.5)), url(assets/waynad-banner.jpg) scroll no-repeat;
+    background-size: cover;
+    color: #fff;
+  }
+  .footer h1{
+    border-bottom: 1px solid grey;
+  }
+footer .icon i{
+  border-radius: 50%;
+  color: #fff;
+  padding: 6px;
+  border:2px solid  rgba(253, 255, 254,0.8);
+}
